@@ -1,0 +1,71 @@
+.card {
+    margin: 50px auto;
+    height: 300px;
+    width: 350px;
+    transition: all 1s ;
+    position: relative;
+    transform-style: preserve-3d;
+    
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    z-index: 2;
+    backface-visibility: hidden
+
+}
+.card > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f2f6f7;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center
+}
+.img {
+    height: 60px;
+    background-color: #89A48E
+}
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 25px ;
+}
+.info h2 {
+    margin-top: 50px ;
+    text-align: center
+}
+.info p {
+    text-align: center;
+    line-height: 1.4;
+    color: #8B8B83
+}
+button{
+    background: none;
+    color: #89A48E;
+    border: 2px solid #89A48E;
+    padding: 7px;
+    font-weight: bold;
+    font-size: medium
+}
+
+
+.back{
+    z-index: 1;
+    transform: rotateY(180deg)
+}
+.back ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 80px
+}
+.back ul li {
+    line-height: 2;
+    
+}
